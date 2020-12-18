@@ -1,0 +1,67 @@
+button{
+  height: 40vh;
+  width: 20vh;
+}
+
+.notes{
+  display: flex;
+  justify-content: space-around;
+  bottom:0px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+body {
+  text-align: center;
+}
+
+.c-note{
+  background-color: rgb(186, 134, 235);
+}
+.d-note{
+  background-color: rgb(86, 109, 211);
+}
+.e-note{
+  background-color: rgb(104, 176, 194);
+}
+.f-note{
+  background-color: rgb(43, 88, 55);
+}
+.g-note{
+  background-color: rgb(125, 196, 116);
+}
+.a-note{
+  background-color: rgb(201, 211, 109);
+}
+.b-note{
+  background-color: rgb(221, 171, 105);
+}
+.c1-note{
+  background-color: rgb(218, 94, 90);
+}
+
+@keyframes jump{
+  0%{
+    bottom: 0%;
+    left: 0%;
+  }
+
+  50%{
+    bottom: 150%;
+    left: 50%;
+  }
+
+  100%{
+    bottom: 0%;
+    left: 90%;
+  }
+}
+
+.notes > div {
+  position: absolute;
+  height: 3em;
+  width: 3em;
+  border-radius: 50%;
+  z-index: -1;
+}
